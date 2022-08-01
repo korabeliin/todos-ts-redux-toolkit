@@ -1,0 +1,31 @@
+.todosFilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #fff;
+  height: 3rem;
+  color: rgba(0, 0, 0, 0.5);
+  button {
+    color: rgba(0, 0, 0, 0.5);
+    background: none;
+    border: 3px solid transparent;
+    margin: 0 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    &:hover {
+      border: 3px solid rgba(236, 236, 236, 1);
+    }
+    &.focus {
+      border: 3px solid rgba(236, 236, 236, 1);
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .todosFilter {
+      height: 10rem;
+      flex-direction: column;
+      padding: 20px;
+    }
+  }

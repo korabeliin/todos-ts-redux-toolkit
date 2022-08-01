@@ -1,0 +1,61 @@
+.todosContainer {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 25px;
+    h1 {
+        font-weight: 100;
+        font-size: 7rem;
+        color: blueviolet;
+        opacity: .1;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 0;
+    }
+
+    .todoApp {
+        width: 100%;
+        header {
+            position: relative;
+            margin-bottom: 5px;
+            i {
+                position: absolute;
+                opacity: .2;
+                font-size: 3rem;
+                top: 50%;
+                left: 20px;
+                transform: translate(0, -50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            transition: height 1000ms ease;
+        }
+        input[type=text], ul li {
+            width: 100%;
+            padding: 20px;
+            font-size: 2rem;
+            border: 1px solid #e9ecef;
+            background-color: #fff;
+            box-sizing: border-box;
+            height: 5rem;
+            color: #000;
+            margin: 0;
+        }
+        input[type=text] {
+            padding-left: 80px;
+            &::placeholder {
+                opacity: .7;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.todoApp_input {
+    &:focus-visible {
+        outline: none;
+    }
+}
